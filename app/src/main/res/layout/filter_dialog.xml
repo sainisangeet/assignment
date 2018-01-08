@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter"
+        android:background="@drawable/edittext_border"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:padding="2dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Sort By"
+        android:textSize="20dp"
+        android:padding="2dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:id="@+id/radioGroupSortBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            <RadioButton
+                android:id="@+id/star"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Stars"
+                android:layout_weight="0.3"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                />
+            <RadioButton
+                android:id="@+id/forks"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Forks"
+                android:layout_weight="0.3"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                />
+            <RadioButton
+                android:id="@+id/updated"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Updated"
+                android:layout_weight="0.3"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:ellipsize="marquee"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Order By"
+        android:textSize="20dp"
+        android:padding="2dp"
+        android:layout_marginTop="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:id="@+id/radioGroupOrderBY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            <RadioButton
+                android:id="@+id/desc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Desc"
+                android:layout_weight="0.3"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                />
+            <RadioButton
+                android:id="@+id/asc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Asc"
+                android:layout_weight="0.7"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/close"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=" Close "
+            android:layout_weight="0.3"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            />
+        <Button
+            android:id="@+id/filterDialog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=" Filter "
+            android:layout_weight="0.3"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            />
+    </LinearLayout>
+</LinearLayout>
